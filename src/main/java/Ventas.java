@@ -37,9 +37,14 @@ public class Ventas {
                 Producto nuevoProducto = orden.agregarProducto();
 
                 //Agregamos los productos a la orden
-                orden.agregarProducto(nuevoProducto);
+               boolean maxProducto =  orden.agregarProducto(nuevoProducto);
 
-                proximoProducto = datosUsuario.continuarCargaProducto();
+                if(maxProducto){
+                    proximoProducto = datosUsuario.continuarCargaProducto();
+                } else {
+                    proximoProducto = 'n';
+                }
+
             }
 
             orden.verOrden();

@@ -59,13 +59,15 @@ public class Orden {
 
     }
 
-    public void agregarProducto(Producto producto){
+    public boolean agregarProducto(Producto producto){
         if(cantProductos < maxProductos){
             productos[cantProductos++] = producto;
 
         } else {
             System.out.println("Ha alcanzado el máximo de productos");
+            return false;
         }
+        return true;
     }
 
     public double calculoTotal(){
