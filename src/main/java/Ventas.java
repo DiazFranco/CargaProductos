@@ -8,7 +8,7 @@ import java.util.Scanner;
 * En la clase DatosUsuario tengo métodos de entrada los cuales retornan como String lo ingresado por el usuario. Queda por hacer la validación de
 * las entradas.
 *
-*
+* En la clase Orden hay métodos para agregar los productos y realizar la lógica del mismo
 *
 *
 *
